@@ -1,0 +1,22 @@
+@ECHO OFF
+REM ******************************************************************
+REM * Run an SQL Script to import some data to Customer, RentalAgreement and MovieRented
+REM * Author: Giang Huynh
+REM * Date:   Oct 27, 2019
+REM ******************************************************************
+
+ECHO --------------------------------
+ECHO Load Customer...
+SQLLDR T218/giang123456@//istpro02.academic.rrc.ca:1521/DBMSDBII CONTROL=Customer.ctl
+
+ECHO --------------------------------
+ECHO Load RentalAgreement...
+SQLLDR T218/giang123456@//istpro02.academic.rrc.ca:1521/DBMSDBII CONTROL=RentalAgreement.ctl
+
+ECHO --------------------------------
+ECHO Load MovieRented...
+SQLLDR T218/giang123456@//istpro02.academic.rrc.ca:1521/DBMSDBII CONTROL=MovieRented.ctl
+
+REM SQLLDR userid/password@DBMSDBII CONTROL=RentalAgreement.ctl
+REM SQLLDR userid/password@DBMSDBII CONTROL=MovieRented.ctl
+PAUSE

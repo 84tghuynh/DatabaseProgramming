@@ -1,0 +1,11 @@
+(BookID, ISBN, Title, Publisher, Published DATE, NoOfPages, RentalCost)
+1,'9781101875339','Designing Your Life','Knopf Doubleday Publishing Group','2016-09-01',264,14.40
+2,'9781101524381','Drive','Penguin Publishing Group','2011-04-01',261,13.50
+3,'9780385346665','Never Eat Alone, Expanded and Updated','The Crown Publishing Group','2014-06-01',456,18.00
+4,'9781101495872','Who Moved My Cheese?','Penguin Publishing Group','2018-09-01',96,17.10
+5,'9781101050439','You Majored in What?','Penguin Publishing Group','2009-04-01',446,13.50
+6,'9781784524098','The Billion Dollar Secret','Panoma Press','2019-06-01',489,9.00
+7,'9781118064061','The 10X Rule','Wiley','2011-03-01',240,23.85
+8,'9780470768068','Construction Management JumpStart','Sybex','2010-04-01',387,34.65
+9,'9781607741695','All Work, No Pay','Ten Speed Press','2012-01-01',261,10.80
+10,'9781515414476','Think and Grow Rich','Dancing Unicorn Books','2017-05-01',361,2.37

@@ -1,0 +1,64 @@
+
+SQL*Loader: Release 11.2.0.1.0 - Production on Wed Oct 30 15:06:34 2019
+
+Copyright (c) 1982, 2009, Oracle and/or its affiliates.  All rights reserved.
+
+Control File:   Customer.ctl
+Data File:      Customer.dat
+  Bad File:     Customer.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 0
+Errors allowed: 50
+Bind array:     64 rows, maximum of 256000 bytes
+Continuation:    none specified
+Path used:      Conventional
+
+Table CUSTOMER, loaded from every logical record.
+Insert option in effect for this table: APPEND
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+CUSTID                              FIRST     *   ,  O(") CHARACTER            
+                                                      O(")
+FNAME                                NEXT     *   ,  O(") CHARACTER            
+                                                      O(")
+LNAME                                NEXT     *   ,  O(") CHARACTER            
+                                                      O(")
+STREETNO                             NEXT     *   ,  O(") CHARACTER            
+                                                      O(")
+STREET                               NEXT     *   ,  O(") CHARACTER            
+                                                      O(")
+CITY                                 NEXT     *   ,  O(") CHARACTER            
+                                                      O(")
+PROVINCE                             NEXT     *   ,  O(") CHARACTER            
+                                                      O(")
+PCODE                                NEXT     *   ,  O(") CHARACTER            
+                                                      O(")
+PRIMARYCUSTID                        NEXT     *   ,  O(") CHARACTER            
+                                                      O(")
+
+
+Table CUSTOMER:
+  2 Rows successfully loaded.
+  0 Rows not loaded due to data errors.
+  0 Rows not loaded because all WHEN clauses were failed.
+  0 Rows not loaded because all fields were null.
+
+
+Space allocated for bind array:                 148608 bytes(64 rows)
+Read   buffer bytes: 1048576
+
+Total logical records skipped:          0
+Total logical records read:             2
+Total logical records rejected:         0
+Total logical records discarded:        0
+
+Run began on Wed Oct 30 15:06:34 2019
+Run ended on Wed Oct 30 15:06:36 2019
+
+Elapsed time was:     00:00:01.81
+CPU time was:         00:00:00.05

@@ -1,0 +1,56 @@
+
+SQL*Loader: Release 11.2.0.1.0 - Production on Wed Oct 30 15:06:38 2019
+
+Copyright (c) 1982, 2009, Oracle and/or its affiliates.  All rights reserved.
+
+Control File:   MovieRented.ctl
+Data File:      MovieRented.dat
+  Bad File:     MovieRented.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 0
+Errors allowed: 50
+Bind array:     64 rows, maximum of 256000 bytes
+Continuation:    none specified
+Path used:      Conventional
+
+Table MOVIERENTED, loaded from every logical record.
+Insert option in effect for this table: APPEND
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+MOVIEID                             FIRST     *   ,  O(') CHARACTER            
+AGREEMENTID                          NEXT     *   ,  O(') CHARACTER            
+RENTALAMOUNT                         NEXT     *   ,  O(') CHARACTER            
+PERCENTREDUCTIONAPPLIED              NEXT     *   ,  O(') CHARACTER            
+
+Record 5: Rejected - Error on table MOVIERENTED.
+ORA-02291: integrity constraint (T218.FK_MOVIESRENTED_0) violated - parent key not found
+
+Record 6: Rejected - Error on table MOVIERENTED.
+ORA-02291: integrity constraint (T218.FK_MOVIESRENTED_1) violated - parent key not found
+
+
+Table MOVIERENTED:
+  4 Rows successfully loaded.
+  2 Rows not loaded due to data errors.
+  0 Rows not loaded because all WHEN clauses were failed.
+  0 Rows not loaded because all fields were null.
+
+
+Space allocated for bind array:                  66048 bytes(64 rows)
+Read   buffer bytes: 1048576
+
+Total logical records skipped:          0
+Total logical records read:             6
+Total logical records rejected:         2
+Total logical records discarded:        0
+
+Run began on Wed Oct 30 15:06:38 2019
+Run ended on Wed Oct 30 15:06:39 2019
+
+Elapsed time was:     00:00:01.74
+CPU time was:         00:00:00.08

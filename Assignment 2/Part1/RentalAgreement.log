@@ -1,0 +1,55 @@
+
+SQL*Loader: Release 19.0.0.0.0 - Production on Sun Oct 27 19:32:26 2019
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle and/or its affiliates.  All rights reserved.
+
+Control File:   RentalAgreement.ctl
+Data File:      RentalAgreement.dat
+  Bad File:     RentalAgreement.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 0
+Errors allowed: 50
+Bind array:     250 rows, maximum of 1048576 bytes
+Continuation:    none specified
+Path used:      Conventional
+
+Table RENTALAGREEMENT, loaded from every logical record.
+Insert option in effect for this table: APPEND
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+AGREEMENTID                         FIRST     *   ,  O(') CHARACTER            
+CUSTID                               NEXT     *   ,  O(') CHARACTER            
+AGREEMENTDATE                        NEXT     *   ,  O(') DATE YYYY-MM-DD      
+MOVIECOUNT                           NEXT     *   ,  O(') CHARACTER            
+DURATIONID                           NEXT     *   ,  O(') CHARACTER            
+
+Record 4: Rejected - Error on table RENTALAGREEMENT.
+ORA-02291: integrity constraint (T218.FK_RENTALAGREEMENT_0) violated - parent key not found
+
+
+Table RENTALAGREEMENT:
+  3 Rows successfully loaded.
+  1 Row not loaded due to data errors.
+  0 Rows not loaded because all WHEN clauses were failed.
+  0 Rows not loaded because all fields were null.
+
+
+Space allocated for bind array:                 322500 bytes(250 rows)
+Read   buffer bytes: 1048576
+
+Total logical records skipped:          0
+Total logical records read:             4
+Total logical records rejected:         1
+Total logical records discarded:        0
+
+Run began on Sun Oct 27 19:32:26 2019
+Run ended on Sun Oct 27 19:32:28 2019
+
+Elapsed time was:     00:00:01.41
+CPU time was:         00:00:00.06
