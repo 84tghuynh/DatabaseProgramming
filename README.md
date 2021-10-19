@@ -5,7 +5,7 @@ Covering advanced topics including how to import data into a database table, exp
 
 Practicing PL/SQL, an embedded procedural language
 
-Designing, test, and debug user stored procedures and cursors; as well as use exceptions effectively
+Designing, test, and debug user stored procedures and cursors; as well as use exceptions effectively.
 
 Developing a solid knowledge of the Oracle system catalogue.
 
